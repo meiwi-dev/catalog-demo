@@ -9,9 +9,7 @@ export const STATUS_LABELS = {
 };
 
 /* Recibe un número y lo formatea como una string en formato moneda japonesa. Ej: yen(1000) => "¥1,000" */
-function yen(n) {
-  return `¥${n.toLocaleString("ja-JP")}`;
-}
+export const yen = (n) => `¥${n.toLocaleString("ja-JP")}`;
 
 /* Función para obtener todos los productos */
 export async function getProducts() {
